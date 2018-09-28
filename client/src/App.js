@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Card from "./components/Card";
 
 class App extends Component {
   render() {
@@ -10,9 +11,14 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="container">
+          <div className="row">
+            <Card />
+          </div>
+        </div>
+        <br />
+        <p className="App-intro">Welcome to the Create-React-App Boilerplate</p>
+        <p>with Sequelize</p>
       </div>
     );
   }
